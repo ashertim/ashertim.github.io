@@ -1,239 +1,83 @@
 <!DOCTYPE html>
 <html  lang="en">
-<!--
-    <head>
-        Required meta tags
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-        Bootstrap CSS 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-        
-
-        <title>Welcome - Tim Asher</title>
-    </head>
-
-    <body style="text-align: center; align-content: center;">
-        <h1>Hello World</h1>
-        <p>I'm hosted with GitHub Pages.<br>yuh</p>
-        <p>yeet</p>
-        <br>
-        <br>
-        <h2 style="color:darkorange;">Page Under Construction</h2>
-        <img src="construction.jpg" alt="Construction worker with stop sign">
-        <p>gonna make it look better later obv</p>
-        <br>
-        <button onclick="document.location='projects.html'">Projects</button>
-        <button onclick="document.location='resume.html'">Resume</button>
-        <button onclick="document.location='hobbies.html'">Hobbies</button>
-        <br>
-        <h1>Welcome!</h1>
-        <br>
-        <img src="tim.jpg" alt="A flattering picture of Tim" width="270" height="480">
-        <h2>About Me</h2>
-        <p>idk i think im pretty cool</p>
-        <br>
-        <h4>Contact</h4>
-        <a href="mailto:ashertim@vt.edu" target="_blank">Email</a>
-        <a href="https://www.linkedin.com/in/tim-asher-398661160/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/ashertim" target="_blank">GitHub</a>
-        
-        <br>
-        <br>
-        <h2>Updates</h2>
-        <h4>2021</h4>
-        <ul>
-            <li>6/9/21 - Created website</li>
-        </ul>
-        <h4>2020</h4>
-        <ul>
-            <li>9/20 - Joined Developer Student Clubs @ VT</li>
-            <li>2/20 - Joined AI/ML Club @ VT</li>
-            <li>1/20 - Declared CS major @ VT</li>
-        </ul>
-        <h4>2019</h4>
-        <ul>
-            <li>8/19 - Started @ VT as a General Engineering major</li>
-            <li>6/19 - Graduated from Grafton High School and Governor's School for Science and Technology</li>
-        </ul>
-    </body>
--->
 
     <head>
-        <title>Tim Asher</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            * {
-              box-sizing: border-box;
-            }
-    
-            /* Style the body */
-            body {
-              font-family: Arial;
-              margin: 0;
-            }
-
-            /* Header/logo Title */
-            .header {
-              padding: 60px;
-              text-align: center;
-              background: url("media/home/tim_header.jpg");
-              background-position-y: 35%;
-              background-size: cover;
-              color:white;
-              text-shadow: 2px 2px 3px #333;
-            }
-    
-            /* Style the top navigation bar */
-            .navbar {
-              display: flex;
-              background-color: #333;
-              justify-content: center;
-            }
-    
-            /* Style the navigation bar links */
-            .navbar a {
-              color: white;
-              padding: 14px 20px;
-              text-decoration: none;
-              text-align: center;
-            }
-    
-            /* Change color on hover */
-            .navbar a:hover {
-              background-color: #ddd;
-              color: black;
-            }
-    
-            /* Column container */
-            .row {  
-              display: flex;
-              flex-wrap: wrap;
-            }
-    
-            /* Create two unequal columns that sits next to each other */
-            /* Sidebar/left column */
-            .side {
-              flex: 30%;
-              background-color: #f1f1f1;
-              padding: 20px;
-            }
-    
-            /* Main column */
-            .main {
-              flex: 70%;
-              background-color: white;
-              padding: 20px;
-            }
-    
-            /* Fake image, just for this example */
-            .fakeimg {
-              background-color: #aaa;
-              width: 100%;
-              padding: 20px;
-            }
-
-            /* Image of me for about section */
-            .about-img {
-              background: url("media/home/tim_about.jpg");
-              background-size: cover;
-              width: 100%;
-              height: 335px;
-              padding: 20px;
-            }
-    
-            /* Footer */
-            .footer {
-              display: flex;
-              padding: 20px;
-              text-align: center;
-              background: #333;
-              color: white;
-              justify-content: center;
-            }
-    
-            /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-            @media screen and (max-width: 700px) {
-              .row, .navbar {   
-                flex-direction: column;
-              }
-            }
-        </style>
+      <meta charset="utf-8">
+      <title>Tim Asher</title>
+      <link rel="stylesheet" href="./media/style.css">
     </head>
-    
+
     <body>
-    
-        <!-- Header -->
-        <div class="header">
-            <h1>Hello, World!</h1>
-            <p>Welcome to my personal website!</p>
-            <p>(Still under construction...)</p>
-        </div>
-    
-        <!-- Navigation Bar -->
-        <div class="navbar">
-            <a href="https://ashertim.github.io/">HOME</a>
-            <a href="https://ashertim.github.io/projects/">PROJECTS</a>
-            <a href="https://ashertim.github.io/resume/">RESUME</a>
-            <a href="https://ashertim.github.io/hobbies/">HOBBIES</a>
-        </div>
-    
-        <!-- The flexible grid (content) -->
-        <div class="row">
-            <div class="side">
-                <h1>About Me</h1>
-                <div class="about-img"></div>
-                <ul>
-                  <li>Computer Science major / Business Leadership minor @ Virginia Tech</li>
+      <div id="page-banner" class="banner" style="background:url('./media/home/tim_header.jpg');">
+          <h1 class="page-header">Hello, World!</h1>
+          <!-- <p class="page-header">Welcome to my personal website!</p> -->
+          <!-- <img src="./prof-photo.png" width="190" height="290"> -->
+          <!--Page nav-->
+          <nav class="navbar">
+              <a id="home-link" href="https://ashertim.github.io/">HOME</a>
+              <a href="https://ashertim.github.io/projects/">PROJECTS</a>
+              <a href="https://ashertim.github.io/resume/">RESUME</a>
+              <a href="https://ashertim.github.io/hobbies/">HOBBIES</a>
+          </nav>
+      </div>
+
+      <div class="page-main">
+          <div class="side-bar">
+              <h2>About Me</h2>
+              <img id="profile-img" src="./media/home/tim_about.jpg">
+              <ul>
+                  <li>Computer Science major @ Virginia Tech</li>
                   <li>Interest in software engineering & game development</li>
                   <li>Pronouns: he/him</li>
                   <li>Hobbies include gaming, hiking, sports, and music</li>
-                </ul>
-            </div>
-            <div class="main">
-                <h1>Professional Updates</h1>
+              </ul>
+          </div>
 
-                <h2>2021</h2>
+          <div class="main-section">
+            <h2>Professional Updates</h2>
+
+            <h3>2022</h3>
+                <ul>
+                  <li><h5>5/20 - Hired as a UTA for CS 2114 @ VT</h5></li>
+                </ul>
+            <br>
+
+            <h3>2021</h3>
                 <ul>
                   <li><h5>8/9 - Hired as a UTA for CS 1064 @ VT</h5></li>
                   <li><h5>6/9 - Created Website</h5></li>
                 </ul>
-                <br>
+            <br>
 
-                <h2>2020</h2>
+            <h3>2020</h3>
                 <ul>
                   <li><h5>9/? - Joined Developer Student Clubs @ VT</h5></li>
                   <li><h5>2/? - Joined AI/ML Club @ VT</h5></li>
                   <li><h5>1/? - Declared CS major @ VT</h5></li>
                 </ul>
-                <br>
+            <br>
 
-                <h2>2019</h2>
+            <h3>2019</h3>
                 <ul>
                   <li><h5>8/26 - Started @ VT as a General Engineering major</h5></li>
                   <li><h5>6/14 - Graduated from Grafton High School and Governor's School for Science and Technology</h5></li>
                 </ul>
-                <br>
-                
 
-            </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <h2>Contact</h2>
-        </div>
+          </div>
+      </div>
 
-        <div class="navbar">
-          <a href="mailto:ashertim@vt.edu">EMAIL</a>
-          <a href="https://www.linkedin.com/in/ashertim/">LINKEDIN</a>
-          <a href="https://github.com/ashertim">GITHUB</a>
-        </div>
-        
-        <div class="footer">
-          <br>
-        </div>
+      <div class="page-footer">
+          <section id="contact-info" class="resume-section">
+              <!--This section edited from Luke Gusukuma's demo CV-->
+              <h2 class="section-header">Contact Information</h2>
+              
+              <nav id="footer-navbar" class="navbar">
+                  <a href="mailto:ashertim@vt.edu">EMAIL</a>
+                  <a href="https://linkedin.com/in/ashertim">LINKEDIN</a>
+                  <a href="https://github.com/ashertim">GITHUB</a>
+              </nav>
+          </section>
+      </div>
     </body>
 
 </html>

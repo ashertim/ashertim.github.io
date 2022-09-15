@@ -16,7 +16,7 @@
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background: url("./ntf-resume-header.jpg");
+    /* background: url("./media/home/tim_header.jpg"); */
   }
 
   /* Header formatting */
@@ -25,6 +25,7 @@
     text-align: center;
     margin:0px;
     color:white;
+    text-shadow: 2px 2px 3px #333;
   }
 
   /* Account for page banner when using anchor links
@@ -103,11 +104,10 @@
     padding: 20px;
   }
 
-  /* Main section - houses resume info */
-  .main-resume {
+  /* Main section */
+  .main-section {
     flex: 60%;
     background-color: white;
-    font-family: 'Times New Roman', Times, serif;
     padding: 20px;
   }
 

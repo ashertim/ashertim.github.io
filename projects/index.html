@@ -1,135 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!--
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Tim Asher - Projects</title>
+      <meta charset="utf-8">
+      <title>Tim Asher</title>
+      <link rel="stylesheet" href="../media/style.css">
     </head>
 
-    <body style="text-align:center;align-content: center;">
-        <button onclick="document.location='index.html'">Home</button>
-        <br>
-        <br>
-        <h1>Personal Projects</h1>
-        <p>Nothing to see here...so far<br>oh wait i suppose this site counts as a project? but ur already here so idk</p>
+    <body>
+      <div id="page-banner" class="banner" style="background:url('../media/projects/header.jpg');">
+          <h1 class="page-header">Personal Projects</h1>
+          <!--Page nav-->
+          <nav class="navbar">
+              <a id="home-link" href="https://ashertim.github.io/">HOME</a>
+              <a href="https://ashertim.github.io/projects/">PROJECTS</a>
+              <a href="https://ashertim.github.io/resume/">RESUME</a>
+              <a href="https://ashertim.github.io/hobbies/">HOBBIES</a>
+          </nav>
+      </div>
+
+      <div class="page-main">
+          <div class="side-bar">
+              <h2>Updates</h2>
+              <ul>
+                  <li>8/29/2022: Began working on software engineering capstone project</li>
+                  <li>8/7/2022: Began working on new personal project: Workout Tracker</li>
+                  <li>5/10/2022: Spaceship Battle Game in working condition, more tweaks need to be made</li>
+                  <li>4/15/2022: Began working on Spaceship Battle Game for GUI Programming course</li>
+                  <li>2/4/2022: Working on upgrades to website as part of a GUI Programming assignment</li>
+                  <li>6/9/2021: Created this website</li>
+              </ul>
+          </div>
+
+          <div class="main-section">
+              <h2>Programming Projects</h2>
+
+                  <h3 class="subsec-header project-name">Workout Tracker Application</h3>
+                  <p id="project-technologies" class="project-info">Technologies: Java</p>
+                  <ul class="project-info">
+                      <li>Using the software design process to develop a computer application to track workout routines and progress</li>
+                      <li>Future plans include transitioning the program to a mobile application</li>
+                  </ul>
+
+                  <h3 class="subsec-header project-name">Spaceship Battle Game</h3>
+                  <p id="project-technologies" class="project-info">Technologies: Unity, C#</p>
+                  <ul class="project-info">
+                      <li>Developed a small 2D game similar to Space Invaders for a course project</li>
+                      <li>Learned and used C# to define the behavior of different game objects</li>
+                  </ul>
+
+                  <h3 class="subsec-header project-name">Personal Website</h3>
+                  <p id="project-technologies" class="project-info">Technologies: HTML, CSS</p>
+                  <ul class="project-info">
+                      <li>Built a resume and portfolio website</li>
+                      <li>Learned HTML & CSS to continuously improve and update the website</li>
+                      <li>Future plans include interactive features using Javascript</li>
+                  </ul>
+
+                  <h3 class="subsec-header project-name">MIPS Assembler</h3>
+                  <p id="project-technologies" class="project-info">Technologies: C, Assembly, Git</p>
+                  <ul class="project-info">
+                      <li>Built a C program that reads text files containing MIPS commands and converts them into binary</li>
+                      <li>Collaborated with a partner, used teamwork skills to communicate and complete work by set deadline</li>
+                  </ul>
+          </div>
+
+      </div>
+
+      <div class="page-footer">
+          <section id="contact-info" class="resume-section">
+              <!--This section edited from Luke Gusukuma's demo CV-->
+              <h2 class="section-header">Contact Information</h2>
+              
+              <nav id="footer-navbar" class="navbar">
+                  <a href="mailto:ashertim@vt.edu">EMAIL</a>
+                  <a href="https://linkedin.com/in/ashertim">LINKEDIN</a>
+                  <a href="https://github.com/ashertim">GITHUB</a>
+              </nav>
+          </section>
+      </div>
     </body>
-</html>
--->
-
-<head>
-    <title>Tim Asher</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        * {
-          box-sizing: border-box;
-        }
-
-        /* Style the body */
-        body {
-          font-family: Arial;
-          margin: 0;
-        }
-
-        /* Header/logo Title */
-        .header {
-          padding: 60px;
-          text-align: center;
-          background: url("../media/projects/header.jpg");
-          background-position-y: 35%;
-          background-size: cover;
-          color:white;
-          text-shadow: 2px 2px 3px #333;
-        }
-
-        /* Style the top navigation bar */
-        .navbar {
-          display: flex;
-          background-color: #333;
-          justify-content: center;
-        }
-
-        /* Style the navigation bar links */
-        .navbar a {
-          color: white;
-          padding: 14px 20px;
-          text-decoration: none;
-          text-align: center;
-        }
-
-        /* Change color on hover */
-        .navbar a:hover {
-          background-color: #ddd;
-          color: black;
-        }
-
-        /* Main column */
-        .main {
-          background-color: white;
-          padding: 20px;
-        }
-
-        /* Footer */
-        .footer {
-          display: flex;
-          padding: 20px;
-          text-align: center;
-          background: #333;
-          color: white;
-          justify-content: center;
-        }
-
-        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 700px) {
-          .row, .navbar {   
-            flex-direction: column;
-          }
-        }
-    </style>
-</head>
-
-<body>
-
-    <!-- Header -->
-    <div class="header">
-        <h1>Personal Projects</h1>
-        <p>Check here for updates!</p>
-        <p>(Still under construction...)</p>
-    </div>
-
-    <!-- Navigation Bar -->
-    <div class="navbar">
-        <a href="https://ashertim.github.io/">HOME</a>
-        <a href="https://ashertim.github.io/projects/">PROJECTS</a>
-        <a href="https://ashertim.github.io/resume/">RESUME</a>
-        <a href="https://ashertim.github.io/hobbies/">HOBBIES</a>
-    </div>
-
-    <div class="main">
-        
-        <h1>Updates</h1>
-        <ul>
-            <li><h5>Currently working on this website</h5></li>
-        </ul>
-
-    </div>
-    
-    <!-- Footer -->
-    <div class="footer">
-        <h2>Contact</h2>
-    </div>
-
-    <div class="navbar">
-      <a href="mailto:ashertim@vt.edu">EMAIL</a>
-      <a href="https://www.linkedin.com/in/ashertim/">LINKEDIN</a>
-      <a href="https://github.com/ashertim">GITHUB</a>
-    </div>
-    
-    <div class="footer">
-      <br>
-    </div>
-</body>
 
 </html>
