@@ -111,6 +111,22 @@
     padding: 20px;
   }
 
+  /* Image container/gallery for hobby section */
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* Style images within container */
+  .image-container img {
+    flex: 25%;
+    max-width: 25%;
+    height: 500px;
+    object-fit: cover;
+    padding: 5px 5px 5px 5px;
+
+  }
+
   /* Set subsection within skills to be a flex container */
   #skill-lists {
     display: flex;
@@ -148,7 +164,7 @@
   to each other 
   Credit: w3schools.com/css/css_website_layout.asp */
   @media screen and (max-width: 500px) {
-    .row, .navbar {   
+    .row, .navbar, .image-container {   
       flex-direction: column;
     }
   }
