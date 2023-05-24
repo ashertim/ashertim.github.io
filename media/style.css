@@ -119,9 +119,8 @@
 
   /* Style images within container */
   .image-container img {
-    flex: 25%;
-    max-width: 25%;
-    height: 500px;
+    flex: 30%;
+    width: 30%;
     object-fit: cover;
     padding: 5px 5px 5px 5px;
 
