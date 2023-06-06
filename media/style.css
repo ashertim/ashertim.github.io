@@ -112,19 +112,19 @@
   }
 
   /* Image container/gallery for hobby section */
-  .image-container {
+  /* .image-container {
     display: flex;
     flex-wrap: wrap;
-  }
+  } */
 
   /* Style images within container */
-  .image-container img {
+  /* .image-container img {
     flex: 30%;
     width: 30%;
     object-fit: cover;
     padding: 5px 5px 5px 5px;
 
-  }
+  } */
 
   /* Set subsection within skills to be a flex container */
   #skill-lists {

@@ -6,6 +6,28 @@
     <head>
       <meta charset="utf-8">
       <title>Tim Asher</title>
+      <style>
+        /* Not sure if I like this, might change or revert
+           Adapted from https://css-tricks.com/adaptive-photo-layout-with-flexbox/ */
+        
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .image {
+            height: 60vh;
+            flex-grow: 1;
+        }
+
+        img {
+            max-height: 100%;
+            min-width: 20%;
+            object-fit: cover;
+            vertical-align: bottom;
+            padding: 5px 5px 5px 5px;
+        }
+      </style>
       <link rel="stylesheet" href="../media/style.css">
     </head>
     
@@ -45,26 +67,26 @@
 
             <h4>Cascade Falls - Pembroke, VA</h4>
             <div class="image-container">
-            <img src="../media/hobbies/hiking/cascades/summer_trail_michael.jpg" alt="On the trail in the summer">
-            <img src="../media/hobbies/hiking/cascades/summer_falls.jpg" alt="Summer falls">
-            <img src="../media/hobbies/hiking/cascades/winter_falls.jpg" alt="The frozen falls">
-            <img src="../media/hobbies/hiking/cascades/winter_group.HEIC" alt="Our hiking group">
-            <img src="../media/hobbies/hiking/cascades/winter_bois.jpg" alt="The Bois">
+                <img class="image" src="../media/hobbies/hiking/cascades/summer_trail_michael.jpg" alt="On the trail in the summer">
+                <img class="image" src="../media/hobbies/hiking/cascades/summer_falls.jpg" alt="Summer falls">
+                <img class="image" src="../media/hobbies/hiking/cascades/winter_falls.jpg" alt="The frozen falls">
+                <img class="image" src="../media/hobbies/hiking/cascades/winter_group.HEIC" alt="Our hiking group">
+                <img class="image" src="../media/hobbies/hiking/cascades/winter_bois.jpg" alt="The Bois">
             </div>
 
             <h4>Bald Knob - Pembroke, VA</h4>
             <div class="image-container">
-            <img src="../media/hobbies/hiking/bald-knob/bald-knob-sign.jpg" alt="Sign on the trail">
-            <img src="../media/hobbies/hiking/bald-knob/bald-knob-group-pic.jpg" alt="At the top">
-            <img src="../media/hobbies/hiking/bald-knob/bald-knob-group-pic-2.jpg" alt="Getting some rest at the top">
+                <img class="image" src="../media/hobbies/hiking/bald-knob/bald-knob-sign.jpg" alt="Sign on the trail">
+                <img class="image" src="../media/hobbies/hiking/bald-knob/bald-knob-group-pic.jpg" alt="At the top">
+                <img class="image" src="../media/hobbies/hiking/bald-knob/bald-knob-group-pic-2.jpg" alt="Getting some rest at the top">
             </div>
 
             <h4>Angel's Rest - Pearisburg, VA</h4>
             <div class="image-container">
-            <img src="../media/hobbies/hiking/angels-rest/angels-rest-trail-pic.jpg" alt="Walking the trail">
-            <img src="../media/hobbies/hiking/angels-rest/angels-rest-selfie.jpg" alt="My friends and I at the top">
-            <img src="../media/hobbies/hiking/angels-rest/angels-rest-view.jpg" alt="Overlooking the valley">
-            <img src="../media/hobbies/hiking/angels-rest/angels-rest.jpg" alt="Overlooking the valley">
+                <img class="image" src="../media/hobbies/hiking/angels-rest/angels-rest-trail-pic.jpg" alt="Walking the trail">
+                <img class="image" src="../media/hobbies/hiking/angels-rest/angels-rest-selfie.jpg" alt="My friends and I at the top">
+                <img class="image" src="../media/hobbies/hiking/angels-rest/angels-rest-view.jpg" alt="Overlooking the valley">
+                <img class="image" src="../media/hobbies/hiking/angels-rest/angels-rest.jpg" alt="Overlooking the valley">
             </div>
           </div>
 
